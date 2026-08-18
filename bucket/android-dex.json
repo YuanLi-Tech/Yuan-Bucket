@@ -1,0 +1,22 @@
+{
+    "version": "1.0.1",
+    "description": "Enable a full desktop experience from any Android device over Wi-Fi. No root, scrcpy-powered, Flutter desktop app with wireless ADB, per-app audio, and quick controls.",
+    "homepage": "https://github.com/Shrey113/Android-Dex",
+    "license": "free",
+    "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.1.0.1/Android_Dex_Windows.zip",
+    "hash": "6709e5c9d7c04000d6259abd1dc59ec3aaebdfc6148cf3876b04e8286d3ea2d2",
+    "bin": "Android_Dex.exe",
+    "shortcuts": [
+        [
+            "Android_Dex.exe",
+            "Android Dex"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/Shrey113/Android-Dex/releases/latest",
+        "regex": "Android-Dex-v\\.([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.$version/Android_Dex_Windows.zip"
+    }
+}
