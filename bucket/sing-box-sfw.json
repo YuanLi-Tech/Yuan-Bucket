@@ -1,0 +1,36 @@
+{
+    "version": "1.14.0",
+    "description": "sing-box for Windows (SFW) - official GUI client.",
+    "homepage": "https://sing-box.sagernet.org",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.14.0/SFW-1.14.0-x64.exe",
+            "hash": "633d67c5d0009bb8a256c1c84fa7a9b3f5adaa1a2cc982842ee9ca905acc126e"
+        }
+    },
+    "installer": {
+        "file": "SFW-1.14.0-x64.exe",
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "bin": "sing-box.exe",
+    "shortcuts": [
+        [
+            "sing-box.exe",
+            "sing-box SFW"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SagerNet/sing-box/releases/latest"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SagerNet/sing-box/releases/download/v$version/SFW-$version-x64.exe"
+            }
+        }
+    }
+}
